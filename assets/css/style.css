@@ -114,6 +114,7 @@ p {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    text-wrap: nowrap;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
@@ -201,44 +202,60 @@ p {
 
 
 @media (max-width: 800px) {
+    /* Estilização para o container principal */
     .container {
         flex-direction: column;
         min-height: 1050px;
         justify-content: flex-start;
     }
     
+    /* Ajuste da largura da seção de conteúdo */
     .content-section {
         width: 100%;
     }
     
+    /* Estilização para o primeiro container */
     .first {
         background-image: url("../images/rIcaMobile.png");
         display: flex;
-        justify-content: start;
-        align-items: start;
+        justify-content: flex-start; /* Corrigido de "start" para "flex-start" */
+        align-items: flex-start; /* Corrigido de "start" para "flex-start" */
     }
 
+    /* Estilização para os parágrafos */
     p {
-        font-size: 2.0em;
+        font-size: 2em;
         margin-bottom: 1.5em;
         text-align: center;
     }
 
-    .second{
+    /* Estilização para o segundo container */
+    .second {
         background-image: url("../images/mobilebanne.png");
     }
 
-    .second .content-section{
+    /* Ajuste do margin-top para a seção de conteúdo dentro do segundo container */
+    .second .content-section {
         margin-top: 100px;
     }
 
-    .container.second{
+    /* Ajuste para o container dentro do segundo container */
+    .container.second {
         justify-content: flex-start;
         align-items: center;
         background-position: center;
         min-height: 850px;
     }
+}
 
+@media (max-width:400px){
+    .container {
+        min-height: 1200px;
+    }
+
+    .container.second{
+        min-height: 1200px;
+    }
 }
 
 
