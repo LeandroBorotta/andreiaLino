@@ -235,7 +235,7 @@ p {
     .container.second{
         justify-content: flex-start;
         align-items: center;
-        background-position: bottom right;
+        background-position: center;
         min-height: 850px;
     }
 
