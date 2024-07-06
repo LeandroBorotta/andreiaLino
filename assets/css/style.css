@@ -8,11 +8,32 @@ body {
     font-family: "poppins", "sans-serif";
 }
 
+@keyframes float{
+	0%,100%{
+		transform:translatey(0)
+	}
+	50%{
+		transform:translatey(-10px)
+	}
+}
+
+.whatsapp{
+    background-color: white;
+    border-radius: 50%;
+    color: #29a319;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    z-index: 999;
+    animation: float 2s ease-in-out infinite;
+}
+
 .container {
     display: flex;
     min-height: 100vh;
     background-size: cover;
-    background-position: top;
+    background-position: top; 
 }
 
 .first {
@@ -150,7 +171,7 @@ p {
     }
     
     .first {
-        background-image: url("../images/rIcaMobile2.png");
+        background-image: url("../images/rIcaMobile.png");
         display: flex;
         justify-content: start;
         align-items: start;
