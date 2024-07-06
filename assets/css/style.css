@@ -1,20 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "poppins", "sans-serif";
 }
+
 .container {
     display: flex;
     min-height: 100vh;
     background-size: cover;
     background-position: top;
 }
-.first{
+
+.first {
     background-image: url("../images/riCA-Photoroom.png");
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
 .image-section {
     flex: 1;
     position: relative;
@@ -32,20 +39,23 @@ body{
 }
 
 .content-section {
-    flex: 1;
+    width: 40%;
     padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.content-section i{
+
+.content-section i {
     margin-left: 10px;
 }
- p {
+
+p {
     font-size: 2.5em;
     margin-bottom: 1.5em;
     text-align: center;
 }
+
 .offer-banner {
     background-color: #29a319;
     color: #000;
@@ -56,11 +66,13 @@ body{
     align-items: center;
     font-weight: 700;
 }
-.offer-banner p{
+
+.offer-banner p {
     font-size: 1.2em;
     margin: 0 10px;
 }
-.offer-banner i{
+
+.offer-banner i {
     color: white;
 }
 
@@ -99,18 +111,56 @@ body{
     color: #888;
 }
 
-@media (max-width: 800px){
+@media (min-width: 801px) and (max-width: 1200px){
     .container {
-        flex-direction: column;
-        min-height: 200vh; 
+        min-height: 650px;
         justify-content: flex-start;
+    }
+    
+    
+    .first {
+        background-image: url("../images/riCA-tablet.png");
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
 
     .content-section {
-        margin-top: -2400px;
+        width: 60%;
     }
 
-    .first{
-        background-image: url("../images/rIcaMobile.png");
+    p {
+        font-size: 2.0em;
+        margin-bottom: 1.5em;
+        text-align: center;
     }
 }
+
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        min-height: 1050px;
+        justify-content: flex-start;
+    }
+    
+    .content-section {
+        width: 100%;
+    }
+    
+    .first {
+        background-image: url("../images/rIcaMobile.png");
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+
+    p {
+        font-size: 2.0em;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+
+}
+
+
