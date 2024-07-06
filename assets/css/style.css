@@ -6,6 +6,7 @@
 
 body {
     font-family: "poppins", "sans-serif";
+    background-color: #fff;
 }
 
 @keyframes float{
@@ -20,6 +21,8 @@ body {
 .whatsapp{
     background-color: white;
     border-radius: 50%;
+    height: 60px;
+    width: 60px;
     color: #29a319;
     position: fixed;
     bottom: 0;
@@ -34,6 +37,7 @@ body {
     min-height: 100vh;
     background-size: cover;
     background-position: top; 
+    background-repeat: no-repeat;
 }
 
 .first {
@@ -132,7 +136,11 @@ p {
     color: #888;
 }
 
-@media (min-width: 801px) and (max-width: 1200px){
+.second{
+    background-image: url("../images/desktop.png");
+}
+
+@media (min-width: 801px) and (max-width: 1400px){
     .container {
         min-height: 650px;
         justify-content: flex-start;
@@ -151,12 +159,45 @@ p {
         width: 60%;
     }
 
+    .second{
+        background-image: url("../images/tablet.png");
+    }
+
+    .second .content-section{
+        width: 45%;
+    }
+
+    .container.second{
+        background-position: right;
+    }
+
+
     p {
         font-size: 2.0em;
         margin-bottom: 1.5em;
         text-align: center;
     }
 }
+
+
+/* Configuração para a segunda sessão em tablets */
+@media (min-width: 801px) and (max-width: 1200px){
+   
+
+    .second{
+        background-image: url("../images/tabletMenor.png");
+    }
+
+    .second .content-section{
+        width: 45%;
+    }
+
+    .container.second{
+        background-position: bottom right;
+        min-height: 600px;
+    }
+}
+
 
 
 @media (max-width: 800px) {
@@ -181,6 +222,21 @@ p {
         font-size: 2.0em;
         margin-bottom: 1.5em;
         text-align: center;
+    }
+
+    .second{
+        background-image: url("../images/mobilebanne.png");
+    }
+
+    .second .content-section{
+        margin-top: 100px;
+    }
+
+    .container.second{
+        justify-content: flex-start;
+        align-items: center;
+        background-position: bottom right;
+        min-height: 850px;
     }
 
 }
