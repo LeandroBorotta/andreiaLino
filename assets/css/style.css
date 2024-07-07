@@ -9,16 +9,19 @@ body {
     background-color: #fff;
 }
 
-@keyframes float{
-	0%,100%{
-		transform:translatey(0)
-	}
-	50%{
-		transform:translatey(-10px)
-	}
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translatey(0)
+    }
+
+    50% {
+        transform: translatey(-10px)
+    }
 }
 
-.whatsapp{
+.whatsapp {
     background-color: white;
     border-radius: 50%;
     height: 60px;
@@ -36,7 +39,7 @@ body {
     display: flex;
     min-height: 100vh;
     background-size: cover;
-    background-position: top; 
+    background-position: top;
     background-repeat: no-repeat;
 }
 
@@ -79,6 +82,14 @@ p {
     font-size: 2.5em;
     margin-bottom: 1.5em;
     text-align: center;
+}
+
+.alert {
+    margin-top: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #29a319;
 }
 
 .offer-banner {
@@ -137,18 +148,23 @@ p {
     color: #888;
 }
 
-.second{
+.second {
     background-image: url("../images/desktop.png");
 }
 
-@media (min-width: 801px) and (max-width: 1400px){
+.second p{
+    font-size: 2em;
+}
+
+
+@media (min-width: 801px) and (max-width: 1400px) {
     .container {
         min-height: 650px;
         justify-content: flex-start;
         background-position: -100px;
     }
-    
-    
+
+
     .first {
         background-image: url("../images/riCA-tablet.png");
         display: flex;
@@ -160,15 +176,15 @@ p {
         width: 60%;
     }
 
-    .second{
-        background-image: url("../images/tablet.png");
+    .second {
+        background-image: url("../images/sessao2-tabletMaior.png");
     }
 
-    .second .content-section{
+    .second .content-section {
         width: 45%;
     }
 
-    .container.second{
+    .container.second {
         background-position: right;
     }
 
@@ -182,80 +198,80 @@ p {
 
 
 /* Configuração para a segunda sessão em tablets */
-@media (min-width: 801px) and (max-width: 1200px){
-   
+@media (min-width: 801px) and (max-width: 1200px) {
 
-    .second{
+
+    .second {
         background-image: url("../images/tabletMenor.png");
     }
 
-    .second .content-section{
-        width: 45%;
+    .second .content-section {
+        margin-top: 100px;
+        width: 100%;
     }
 
-    .container.second{
-        background-position: bottom right;
-        min-height: 600px;
+    .container.second {
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-position: bottom;
+        min-height: 1300px;
     }
 }
 
 
 
 @media (max-width: 800px) {
-    /* Estilização para o container principal */
+
     .container {
         flex-direction: column;
         min-height: 1050px;
         justify-content: flex-start;
     }
-    
-    /* Ajuste da largura da seção de conteúdo */
+
+
     .content-section {
         width: 100%;
     }
-    
-    /* Estilização para o primeiro container */
+
     .first {
         background-image: url("../images/rIcaMobile.png");
         display: flex;
-        justify-content: flex-start; /* Corrigido de "start" para "flex-start" */
-        align-items: flex-start; /* Corrigido de "start" para "flex-start" */
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
-    /* Estilização para os parágrafos */
     p {
         font-size: 2em;
         margin-bottom: 1.5em;
         text-align: center;
     }
 
-    /* Estilização para o segundo container */
     .second {
         background-image: url("../images/mobilebanne.png");
     }
 
-    /* Ajuste do margin-top para a seção de conteúdo dentro do segundo container */
     .second .content-section {
         margin-top: 100px;
     }
 
-    /* Ajuste para o container dentro do segundo container */
     .container.second {
         justify-content: flex-start;
         align-items: center;
-        background-position: center;
-        min-height: 850px;
+        background-position: bottom;
+        min-height: 1200px;
     }
 }
 
-@media (max-width:400px){
+@media (max-width:500px) {
     .container {
         min-height: 1200px;
     }
 
-    .container.second{
+    .container.second {
         min-height: 1200px;
     }
+
+    .second {
+        background-image: url("../images/celularesPequenos.png");
+    }
 }
-
-
