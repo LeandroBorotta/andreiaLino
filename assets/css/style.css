@@ -276,4 +276,15 @@ p {
     .second {
         background-image: url("../images/celularesPequenos.png");
     }
+
+    .second .content-section {
+        margin-top: 150px;
+    }
+
+    .second p{
+        margin-bottom: 0.5em;
+    }
+    .second .alert{
+        margin-top: 0;
+    }
 }
