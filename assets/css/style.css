@@ -88,7 +88,7 @@ p {
     margin-top: 20px;
     font-weight: 500;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 1em;
     color: #29a319;
 }
 
@@ -152,8 +152,12 @@ p {
     background-image: url("../images/desktop.png");
 }
 
+.second .alert{
+    font-size: 1em;
+}
+
 .second p{
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 
@@ -224,7 +228,7 @@ p {
 
     .container {
         flex-direction: column;
-        min-height: 1050px;
+        min-height: 1225px;
         justify-content: flex-start;
     }
 
@@ -234,15 +238,15 @@ p {
     }
 
     .first {
-        background-image: url("../images/rIcaMobile.png");
+        background-image: url("../images//ricaMobile.png");
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
     }
 
     p {
-        font-size: 2em;
-        margin-bottom: 1.5em;
+        font-size: 1.5em;
+        margin: 1.5em 0;
         text-align: center;
     }
 
@@ -265,20 +269,20 @@ p {
 /* para pequenos celulares até 500px */
 
 @media (max-width:500px) {
-    .container {
-        min-height: 1200px;
-    }
+
 
     .container.second {
-        min-height: 1200px;
+        min-height: 850px;
     }
-
+    .second p{
+        font-size: 1.5em;
+    }
     .second {
-        background-image: url("../images/celularesPequenos.png");
+        background-image: url("../images/mobileBanner.png");
     }
 
     .second .content-section {
-        margin-top: 150px;
+        margin-top: 50px;
     }
 
     .second p{
