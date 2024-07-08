@@ -44,7 +44,7 @@ body {
 }
 
 .first {
-    background-image: url("../images/riCA-Photoroom.png");
+    background-image: url("../images/riCA-Photoroom-branco.png");
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -161,7 +161,7 @@ p {
 }
 
 
-@media (min-width: 801px) and (max-width: 1400px) {
+@media (min-width: 800px) and (max-width: 1400px) {
     .container {
         min-height: 650px;
         justify-content: flex-start;
@@ -170,7 +170,7 @@ p {
 
 
     .first {
-        background-image: url("../images/riCA-tablet.png");
+        background-image: url("../images/riCA-tablet-branco.png");
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -189,7 +189,14 @@ p {
     }
 
     .container.second {
-        background-position: right;
+        background-position: center;
+    }
+
+    .second p{
+        margin-bottom: 0.5em;
+    }
+    .second .alert{
+        margin-top: 0;
     }
 
 
@@ -202,7 +209,7 @@ p {
 
 
 /* Configuração para a segunda sessão em tablets */
-@media (min-width: 801px) and (max-width: 1200px) {
+@media (min-width: 800px) and (max-width: 1200px) {
 
 
     .second {
@@ -218,13 +225,13 @@ p {
         justify-content: flex-start;
         align-items: flex-start;
         background-position: bottom;
-        min-height: 1300px;
+        min-height: 1050px;
     }
 }
 
 
 /* configuração para celulares grandes e pequenos tablets */
-@media (max-width: 800px) {
+@media (max-width: 799px) {
 
     .container {
         flex-direction: column;
@@ -238,7 +245,7 @@ p {
     }
 
     .first {
-        background-image: url("../images/ricaMobile.png");
+        background-image: url("../images/tentativa\ 2-Photoroom.png");
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -251,7 +258,7 @@ p {
     }
 
     .second {
-        background-image: url("../images/mobilebanne.png");
+        background-image: url("../images/mobileBanner.png");
     }
 
     .second .content-section {
