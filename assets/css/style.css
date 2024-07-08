@@ -223,7 +223,7 @@ p {
 }
 
 
-
+/* configuração para celulares grandes e pequenos tablets */
 @media (max-width: 800px) {
 
     .container {
