@@ -238,7 +238,7 @@ p {
     }
 
     .first {
-        background-image: url("../images//ricaMobile.png");
+        background-image: url("../images/ricaMobile.png");
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
