@@ -44,7 +44,7 @@ body {
 }
 
 .first {
-    background-image: url("../images/riCA-Photoroom-branco.png");
+    background-image: url("../images/desktopOficial.png");
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -245,7 +245,7 @@ p {
     }
 
     .first {
-        background-image: url("../images/tentativa\ 2-Photoroom.png");
+        background-image: url("../images/mobileOficial.png");
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
