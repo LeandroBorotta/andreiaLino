@@ -7,6 +7,7 @@
 body {
     font-family: "poppins", "sans-serif";
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 @keyframes float {
@@ -160,6 +161,73 @@ p {
     font-size: 1.8em;
 }
 
+/* Galeria de imagens */
+.gallery{
+    background-image: url("../images/fundoWhats.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.gallery .title{
+    text-align: center;
+    color: #29a319;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #f5f6f1;
+}
+
+.gallery .container-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+
+
+.gallery .container-images img {
+    max-width: 700px; 
+    height: 550px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+
+/* carrousel  */
+
+@keyframes moviment {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.carrousel {
+    background-color: #29a319;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden; 
+    white-space: nowrap; 
+    justify-content: start;
+}
+
+.carrousel .content {
+    display: flex;
+    animation: moviment 55s linear infinite;
+}
+
+.carrousel h2 {
+    display: inline-block;
+    margin-right: 50px; 
+}
+
+
+
 
 @media (min-width: 800px) and (max-width: 1400px) {
     .container {
@@ -297,5 +365,19 @@ p {
     }
     .second .alert{
         margin-top: 0;
+    }
+
+    .gallery .title{
+        font-size: 14px;
+    }
+
+    .gallery .container-images {
+        justify-content:center ;
+    }
+
+    .gallery .container-images img {
+        width: 360px;
+        height: 400px;
+        object-fit: cover;
     }
 }
