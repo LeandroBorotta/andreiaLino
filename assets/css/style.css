@@ -163,17 +163,18 @@ p {
 
 /* Galeria de imagens */
 .gallery{
-    background-image: url("../images/fundoWhats.jpg");
+    background-image: url("../images/fundoWhats.png");
     background-repeat: repeat;
     background-size: cover;
 }
 
 .gallery .title{
+    padding-top: 15px;
     text-align: center;
-    color: #29a319;
+    color: #fff;
     text-transform: uppercase;
     font-weight: 700;
-    background-color: #f5f6f1;
+    background-color: rgba(142,188,180, 0.1);
 }
 
 .gallery .container-images {
@@ -367,17 +368,39 @@ p {
         margin-top: 0;
     }
 
+
+
     .gallery .title{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .gallery .container-images {
+        display: flex;
+        align-items: center;
         justify-content:center ;
     }
 
-    .gallery .container-images img {
+    .gallery .container-images img:nth-child(1) {
+        width: 300px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .gallery .container-images img:nth-child(2) {
         width: 360px;
-        height: 400px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .gallery .container-images img:nth-child(3) {
+        width: 360px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .gallery .container-images img:nth-child(4) {
+        width: 360px;
+        height: 350px;
         object-fit: cover;
     }
 }
